@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520" role="img" aria-label="LastroHub, símbolo"><title>LastroHub, símbolo</title><rect width="520" height="520" fill="#0f1e3a"/><g transform="translate(40 40)"><polygon points="220,20 393.2,120 393.2,320 220,420 46.8,320 46.8,120" fill="#152743" stroke="#C9A84C" stroke-width="12" stroke-linejoin="round"/>
+<circle cx="220" cy="232" r="140" fill="none" stroke="#C9A84C" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 13"/>
+<line x1="220" y1="232" x2="220" y2="92" stroke="#C9A84C" stroke-width="8"/>
+<line x1="220" y1="232" x2="98.8" y2="302" stroke="#C9A84C" stroke-width="7" stroke-dasharray="14 12"/>
+<line x1="220" y1="232" x2="341.2" y2="302" stroke="#C9A84C" stroke-width="7" stroke-dasharray="14 12"/>
+<g transform="translate(220 92)"><circle r="40" fill="none" stroke="#F5F7FA" stroke-width="4"/><circle r="32" fill="#152743" stroke="#C9A84C" stroke-width="8"/>
+<path transform="scale(0.9)" d="M-14 -4L0 -14L14 -4Z M-9 0V8 M0 0V8 M9 0V8 M-14 12H14" fill="none" stroke="#C9A84C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></g>
+<g transform="translate(220 232)"><circle r="50" fill="none" stroke="#C9A84C" stroke-width="3"/><circle r="40" fill="#C9A84C"/>
+<path d="M-20 -16V16H0 M0 -16V16 M20 -16V16 M0 0H20" fill="none" stroke="#152743" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g transform="translate(98.8 302)"><circle r="30" fill="#152743" stroke="#C9A84C" stroke-width="7"/>
+<path transform="scale(0.85)" d="M-9 -14H4L11 -7V14H-9Z M4 -14V-7H11 M-5 0H7 M-5 5H7 M-5 10H2" fill="none" stroke="#C9A84C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></g>
+<g transform="translate(341.2 302)"><circle r="30" fill="#152743" stroke="#C9A84C" stroke-width="7"/>
+<g transform="scale(0.8)" fill="none" stroke="#C9A84C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M-15 -8H2V7H-15Z M2 -4H9L14 1V7H2"/>
+<circle cx="-8" cy="9" r="3.2" fill="#152743"/><circle cx="8" cy="9" r="3.2" fill="#152743"/></g></g></g></svg>
