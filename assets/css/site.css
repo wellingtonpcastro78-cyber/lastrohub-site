@@ -393,13 +393,18 @@ h3 { font-size: 19px; font-weight: 650; letter-spacing: -0.01em; }
 
 /* ---------- Chamada final ---------- */
 .final { text-align: left; }
-.final__grade { display: grid; grid-template-columns: minmax(0, 1.3fr) auto; gap: 40px; align-items: end; }
+.final__grade { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; }
+.final__grade > div:first-child { max-width: 860px; }
 .final h2 { font-size: clamp(32px, 4.4vw, 52px); color: var(--branco); }
 .final p { color: #C3CCD9; font-size: 19px; margin: 18px 0 0; max-width: 620px; }
-.final__acoes { display: grid; gap: 14px; justify-items: start; }
+.final__acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
 .final__email { font-size: 15px; color: var(--cinza-escuro-2); }
 .final__email a { color: var(--dourado); font-weight: 600; text-underline-offset: 3px; }
-@media (max-width: 800px) { .final__grade { grid-template-columns: minmax(0, 1fr); } }
+/* Aviso quando o programa de e-mail não abre */
+.aviso-email { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%) translateY(20px); z-index: 100; max-width: min(560px, calc(100vw - 32px)); padding: 16px 20px; border-radius: 12px; background: #FFFFFF; color: #0F1E3A; box-shadow: 0 12px 32px rgba(15, 30, 58, .28); font-size: 15px; line-height: 1.5; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; }
+.aviso-email.visivel { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+.aviso-email b { color: #7A5F14; }
+.aviso-email button { margin-left: 8px; border: 0; background: none; color: #4A5A73; font: inherit; cursor: pointer; text-decoration: underline; }
 
 /* ---------- Rodapé ---------- */
 .rodape { background: var(--azul-fundo); color: var(--cinza-escuro-2); font-size: 14.5px; padding: 56px 0 40px; border-top: 1px solid rgba(201,168,76,.2); }
@@ -451,7 +456,7 @@ h3 { font-size: 19px; font-weight: 650; letter-spacing: -0.01em; }
 @media (max-width: 900px) {
   .hex-deco--abertura { display: none; }
   .hex-deco--faixa { width: 300px; height: 300px; right: -190px; opacity: .6; }
-  .hex-deco--final { width: 320px; height: 320px; right: -230px; opacity: .35; }
+  .hex-deco--final { width: 320px; height: 320px; right: -255px; opacity: .3; }
 }
 
 /* Brilho que passa uma única vez sobre o símbolo da abertura */
