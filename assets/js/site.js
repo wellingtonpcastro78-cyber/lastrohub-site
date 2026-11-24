@@ -71,3 +71,34 @@ var LASTROHUB_CONTATO = {
   var ano = document.getElementById("ano");
   if (ano) ano.textContent = new Date().getFullYear();
 })();
+
+/* Teste de 1 minuto: nada é enviado; o cálculo acontece só no navegador. */
+(function () {
+  var form = document.querySelector(".teste");
+  if (!form) return;
+  var res = form.querySelector(".teste__resultado");
+  var simEl = form.querySelector("[data-teste='sim']");
+  var msgEl = form.querySelector("[data-teste='msg']");
+  var cta = form.querySelector("[data-teste='cta']");
+  form.addEventListener("change", function () {
+    var total = 0, sim = 0;
+    for (var i = 1; i <= 5; i++) {
+      var r = form.querySelector("input[name='q" + i + "']:checked");
+      if (r) { total++; if (r.value === "1") sim++; }
+    }
+    if (total < 5) return;
+    var falta = 5 - sim;
+    simEl.textContent = sim;
+    if (sim === 5) {
+      msgEl.textContent = "Raro. Mas quando perguntarem \"você sabia?\", a prova está numa trilha que ninguém consegue editar?";
+      cta.textContent = "Quero ver na prática";
+    } else if (sim >= 3) {
+      msgEl.textContent = "Você enxerga parte do caminho. O que falta é justamente onde o prejuízo costuma aparecer, e onde vão perguntar: você sabia?";
+      cta.textContent = "Quero ver os outros " + falta;
+    } else {
+      msgEl.textContent = "Seu fundo opera no escuro na maior parte do caminho. Quando o lastro falhar, a resposta para \"você sabia?\" vai ser não.";
+      cta.textContent = "Quero ver os outros " + falta;
+    }
+    res.hidden = false;
+  });
+})();
