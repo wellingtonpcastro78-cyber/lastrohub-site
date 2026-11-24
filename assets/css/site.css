@@ -888,3 +888,35 @@ h3 { font-size: 19px; font-weight: 650; letter-spacing: -0.01em; }
 .nao__lista span:last-child { color: #C3CCD9; font-size: 15px; }
 @media (max-width: 1100px) { .nao__lista { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .nao__lista { grid-template-columns: minmax(0, 1fr); } }
+/* hub: enquadramento centralizado */
+.hub { align-items: center; }
+.hub__centro { justify-content: center; }
+.hub__centro span { position: absolute; top: calc(100% + 10px); left: 50%; transform: translateX(-50%); white-space: nowrap; }
+.hub__centro svg { width: 190px; }
+.hub__centro::before { top: 50% !important; left: -28px; width: 28px; }
+.hub__destino { align-self: center; }
+/* Quem somos: centralizado e com mais destaque */
+.quemsomos { text-align: center; }
+.quemsomos .sobretitulo { display: block; font-size: 15px; letter-spacing: .28em; }
+.quemsomos .qs__titulo { margin: 10px auto 0; color: #fff; font-size: clamp(40px, 5.5vw, 72px); line-height: 1; font-weight: 800; letter-spacing: -.03em; }
+.quemsomos .qs__titulo::after { content: ""; display: block; width: 64px; height: 3px; margin: 22px auto 0; background: var(--dourado); }
+.crenca { margin-top: 48px; }
+.crenca__lista { max-width: 920px; margin-left: auto; margin-right: auto; }
+.missao { max-width: 1000px; margin-left: auto; margin-right: auto; }
+.nao__lista li { text-align: left; }
+.hub__fontes::after { top: 28.5px; bottom: 28.5px; right: -29px; }
+.marca svg { width: 40px; height: 46px; }
+/* ---------- Redução de custos (comum aos três) ---------- */
+.custo4 { margin-top: 24px; padding: 28px 32px; border-radius: 16px; background: #fff; border: 1.5px solid #C9A84C; box-shadow: 0 12px 30px rgba(15,30,58,.08); }
+.custo4__topo { display: grid; grid-template-columns: 64px 1fr; gap: 20px; align-items: start; }
+.custo4__icone { width: 64px; height: 64px; border-radius: 16px; display: grid; place-items: center; background: #FBEBEB; color: #9B1C1C; }
+.custo4__icone svg { width: 32px; height: 32px; }
+.custo4__titulo { margin: 0; color: #0F1E3A; font-size: clamp(22px, 2.4vw, 30px); font-weight: 700; line-height: 1.2; }
+.custo4__titulo b { color: #A8862B; }
+.custo4__texto { margin: 10px 0 0; color: #4A5A73; font-size: 17px; max-width: 920px; }
+.custo4__lista { list-style: none; padding: 20px 0 0; margin: 22px 0 0; border-top: 1px solid #D5DCE8; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.custo4__lista li { display: grid; grid-template-columns: 40px 1fr; column-gap: 12px; align-items: start; color: #4A5A73; font-size: 15.5px; }
+.custo4__lista li span { grid-row: 1 / 3; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: #0F1E3A; color: #C9A84C; }
+.custo4__lista li span svg { width: 20px; height: 20px; }
+.custo4__lista b { color: #0F1E3A; }
+@media (max-width: 860px) { .custo4 { padding: 22px; } .custo4__topo { grid-template-columns: minmax(0, 1fr); } .custo4__lista { grid-template-columns: minmax(0, 1fr); } }
